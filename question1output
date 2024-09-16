@@ -1,0 +1,907 @@
+//Q:1 Generate a model in Python for representation of a bank account of type savings and
+//balance along with transactions of deposit and withdrawals and currently create a program to
+//generate 100 accounts with Random balance and transactions for no. of months and no. of
+//transactions with a seed value of amount. Print all 100 accounts with the last balance and
+//organize them by lowest to highest balance.
+
+//Output
+
+Account 34: Balance = 74
+Last 6 transactions:
+Withdrawal: -427
+Withdrawal failed: Insufficient balance
+Deposit: +893
+Deposit: +738
+Withdrawal: -1384
+Withdrawal: -980
+----------------------------------------
+Account 57: Balance = 238
+Last 6 transactions:
+Deposit: +1589
+Withdrawal: -1445
+Deposit: +484
+Withdrawal: -961
+Withdrawal: -1254
+Withdrawal: -960
+----------------------------------------
+Account 68: Balance = 275
+Last 6 transactions:
+Deposit: +772
+Withdrawal: -1285
+Withdrawal: -1689
+Withdrawal: -531
+Withdrawal failed: Insufficient balance
+Withdrawal failed: Insufficient balance
+----------------------------------------
+Account 25: Balance = 293
+Last 6 transactions:
+Deposit: +293
+Withdrawal: -1260
+Deposit: +537
+Withdrawal: -561
+Withdrawal: -858
+Withdrawal failed: Insufficient balance
+----------------------------------------
+Account 35: Balance = 360
+Last 6 transactions:
+Withdrawal: -602
+Withdrawal: -154
+Withdrawal failed: Insufficient balance
+Withdrawal failed: Insufficient balance
+Deposit: +1343
+Withdrawal: -1869
+----------------------------------------
+Account 16: Balance = 584
+Last 6 transactions:
+Withdrawal: -815
+Deposit: +1946
+Withdrawal: -1585
+Withdrawal: -1833
+Withdrawal: -254
+Withdrawal: -854
+----------------------------------------
+Account 53: Balance = 740
+Last 6 transactions:
+Withdrawal: -304
+Withdrawal failed: Insufficient balance
+Deposit: +250
+Withdrawal: -419
+Withdrawal failed: Insufficient balance
+Withdrawal failed: Insufficient balance
+----------------------------------------
+Account 90: Balance = 840
+Last 6 transactions:
+Deposit: +1134
+Withdrawal: -1713
+Withdrawal: -1415
+Withdrawal: -278
+Withdrawal: -629
+Withdrawal: -1714
+----------------------------------------
+Account 97: Balance = 900
+Last 6 transactions:
+Withdrawal: -1939
+Withdrawal: -929
+Withdrawal: -1921
+Deposit: +102
+Withdrawal: -1373
+Withdrawal: -615
+----------------------------------------
+Account 61: Balance = 1008
+Last 6 transactions:
+Withdrawal: -1087
+Deposit: +793
+Withdrawal: -1213
+Withdrawal: -1749
+Withdrawal: -809
+Withdrawal failed: Insufficient balance
+----------------------------------------
+Account 65: Balance = 1129
+Last 6 transactions:
+Deposit: +1760
+Deposit: +695
+Withdrawal: -1126
+Deposit: +511
+Withdrawal: -750
+Withdrawal: -964
+----------------------------------------
+Account 85: Balance = 1398
+Last 6 transactions:
+Deposit: +1168
+Withdrawal: -1829
+Withdrawal: -122
+Withdrawal failed: Insufficient balance
+Withdrawal failed: Insufficient balance
+Withdrawal: -251
+----------------------------------------
+Account 79: Balance = 1632
+Last 6 transactions:
+Deposit: +609
+Deposit: +1440
+Deposit: +1439
+Withdrawal: -406
+Withdrawal: -1812
+Withdrawal: -1571
+----------------------------------------
+Account 31: Balance = 1737
+Last 6 transactions:
+Withdrawal: -1719
+Withdrawal: -1268
+Withdrawal: -1128
+Withdrawal: -1200
+Deposit: +1448
+Withdrawal: -1840
+----------------------------------------
+Account 17: Balance = 1800
+Last 6 transactions:
+Withdrawal: -488
+Deposit: +267
+Deposit: +1774
+Withdrawal: -575
+Withdrawal: -968
+Deposit: +128
+----------------------------------------
+Account 5: Balance = 1829
+Last 6 transactions:
+Deposit: +345
+Withdrawal: -543
+Deposit: +627
+Withdrawal: -1161
+Deposit: +185
+Deposit: +717
+----------------------------------------
+Account 6: Balance = 1855
+Last 6 transactions:
+Deposit: +569
+Withdrawal: -1204
+Withdrawal: -421
+Withdrawal failed: Insufficient balance
+Deposit: +201
+Deposit: +1557
+----------------------------------------
+Account 89: Balance = 2136
+Last 6 transactions:
+Withdrawal: -1653
+Withdrawal: -955
+Deposit: +121
+Withdrawal: -1842
+Deposit: +616
+Withdrawal: -1152
+----------------------------------------
+Account 49: Balance = 2222
+Last 6 transactions:
+Deposit: +1474
+Withdrawal: -1459
+Withdrawal: -1243
+Withdrawal: -537
+Withdrawal: -899
+Withdrawal: -110
+----------------------------------------
+Account 81: Balance = 2245
+Last 6 transactions:
+Withdrawal: -841
+Deposit: +1008
+Withdrawal: -1577
+Withdrawal failed: Insufficient balance
+Deposit: +244
+Deposit: +1923
+----------------------------------------
+Account 30: Balance = 2313
+Last 6 transactions:
+Deposit: +409
+Deposit: +772
+Deposit: +362
+Withdrawal: -1144
+Withdrawal: -159
+Deposit: +978
+----------------------------------------
+Account 67: Balance = 2418
+Last 6 transactions:
+Withdrawal: -384
+Deposit: +1054
+Withdrawal: -1357
+Deposit: +759
+Deposit: +301
+Deposit: +374
+----------------------------------------
+Account 98: Balance = 2635
+Last 6 transactions:
+Deposit: +945
+Withdrawal: -1733
+Withdrawal failed: Insufficient balance
+Deposit: +1768
+Deposit: +1730
+Withdrawal: -1203
+----------------------------------------
+Account 88: Balance = 2842
+Last 6 transactions:
+Withdrawal: -352
+Deposit: +1981
+Withdrawal: -1759
+Withdrawal: -1299
+Withdrawal: -1050
+Deposit: +929
+----------------------------------------
+Account 86: Balance = 3596
+Last 6 transactions:
+Deposit: +335
+Deposit: +577
+Deposit: +103
+Deposit: +506
+Deposit: +1657
+Withdrawal: -1440
+----------------------------------------
+Account 14: Balance = 3622
+Last 6 transactions:
+Withdrawal: -729
+Withdrawal: -1350
+Withdrawal: -738
+Withdrawal: -1083
+Deposit: +642
+Withdrawal: -160
+----------------------------------------
+Account 80: Balance = 3670
+Last 6 transactions:
+Deposit: +150
+Withdrawal: -750
+Withdrawal: -305
+Withdrawal: -103
+Deposit: +666
+Withdrawal: -1634
+----------------------------------------
+Account 64: Balance = 3700
+Last 6 transactions:
+Withdrawal failed: Insufficient balance
+Withdrawal failed: Insufficient balance
+Deposit: +1740
+Deposit: +1464
+Deposit: +393
+Withdrawal: -1298
+----------------------------------------
+Account 19: Balance = 3806
+Last 6 transactions:
+Deposit: +630
+Withdrawal: -424
+Withdrawal: -177
+Deposit: +292
+Deposit: +1225
+Withdrawal: -1173
+----------------------------------------
+Account 54: Balance = 3837
+Last 6 transactions:
+Withdrawal: -1846
+Deposit: +941
+Deposit: +985
+Withdrawal: -1541
+Deposit: +899
+Deposit: +1045
+----------------------------------------
+Account 23: Balance = 3850
+Last 6 transactions:
+Withdrawal: -1122
+Withdrawal: -220
+Withdrawal: -550
+Deposit: +774
+Deposit: +884
+Deposit: +1504
+----------------------------------------
+Account 52: Balance = 3874
+Last 6 transactions:
+Deposit: +635
+Deposit: +1797
+Withdrawal: -1823
+Deposit: +1086
+Deposit: +793
+Deposit: +151
+----------------------------------------
+Account 99: Balance = 3912
+Last 6 transactions:
+Withdrawal: -1816
+Withdrawal: -518
+Deposit: +1147
+Withdrawal: -1349
+Withdrawal: -1214
+Withdrawal: -295
+----------------------------------------
+Account 20: Balance = 4024
+Last 6 transactions:
+Deposit: +1305
+Withdrawal: -1304
+Deposit: +1036
+Withdrawal: -1000
+Deposit: +861
+Deposit: +1877
+----------------------------------------
+Account 63: Balance = 4064
+Last 6 transactions:
+Withdrawal: -557
+Deposit: +1774
+Withdrawal: -1040
+Withdrawal: -992
+Withdrawal: -1175
+Deposit: +1712
+----------------------------------------
+Account 27: Balance = 4150
+Last 6 transactions:
+Withdrawal: -1053
+Deposit: +771
+Deposit: +1009
+Withdrawal: -969
+Deposit: +450
+Deposit: +1592
+----------------------------------------
+Account 93: Balance = 4488
+Last 6 transactions:
+Deposit: +1117
+Withdrawal: -273
+Deposit: +1841
+Withdrawal: -1335
+Deposit: +1458
+Withdrawal: -552
+----------------------------------------
+Account 96: Balance = 4545
+Last 6 transactions:
+Withdrawal: -370
+Withdrawal: -728
+Withdrawal: -973
+Withdrawal: -1071
+Deposit: +363
+Deposit: +1481
+----------------------------------------
+Account 41: Balance = 4636
+Last 6 transactions:
+Deposit: +1180
+Deposit: +1536
+Withdrawal: -532
+Withdrawal: -1996
+Withdrawal: -196
+Deposit: +1536
+----------------------------------------
+Account 56: Balance = 4759
+Last 6 transactions:
+Withdrawal: -1428
+Deposit: +591
+Withdrawal: -975
+Deposit: +401
+Deposit: +449
+Withdrawal: -578
+----------------------------------------
+Account 4: Balance = 4769
+Last 6 transactions:
+Deposit: +686
+Deposit: +1436
+Withdrawal: -316
+Deposit: +1608
+Withdrawal: -576
+Withdrawal: -1752
+----------------------------------------
+Account 62: Balance = 4797
+Last 6 transactions:
+Withdrawal: -1517
+Deposit: +793
+Deposit: +309
+Withdrawal: -1857
+Withdrawal: -1041
+Withdrawal: -1599
+----------------------------------------
+Account 74: Balance = 4889
+Last 6 transactions:
+Withdrawal: -436
+Withdrawal: -1935
+Withdrawal: -1675
+Deposit: +834
+Deposit: +1015
+Withdrawal: -1593
+----------------------------------------
+Account 28: Balance = 4974
+Last 6 transactions:
+Withdrawal: -1268
+Deposit: +1388
+Deposit: +1157
+Withdrawal: -148
+Withdrawal: -1940
+Withdrawal: -1520
+----------------------------------------
+Account 82: Balance = 5013
+Last 6 transactions:
+Withdrawal: -1816
+Deposit: +1413
+Withdrawal: -1608
+Withdrawal: -290
+Withdrawal: -953
+Deposit: +773
+----------------------------------------
+Account 21: Balance = 5141
+Last 6 transactions:
+Withdrawal: -1480
+Deposit: +753
+Withdrawal: -996
+Deposit: +753
+Withdrawal: -897
+Withdrawal: -356
+----------------------------------------
+Account 38: Balance = 5211
+Last 6 transactions:
+Deposit: +1699
+Withdrawal: -356
+Withdrawal: -231
+Deposit: +1449
+Deposit: +102
+Deposit: +790
+----------------------------------------
+Account 1: Balance = 5213
+Last 6 transactions:
+Deposit: +1779
+Withdrawal: -1851
+Withdrawal: -496
+Withdrawal: -1259
+Withdrawal: -431
+Withdrawal: -354
+----------------------------------------
+Account 18: Balance = 5236
+Last 6 transactions:
+Deposit: +1152
+Deposit: +1720
+Withdrawal: -903
+Withdrawal: -1874
+Deposit: +594
+Deposit: +1092
+----------------------------------------
+Account 78: Balance = 5283
+Last 6 transactions:
+Withdrawal: -879
+Deposit: +1258
+Withdrawal: -254
+Deposit: +1858
+Deposit: +173
+Deposit: +742
+----------------------------------------
+Account 72: Balance = 5584
+Last 6 transactions:
+Withdrawal: -1047
+Deposit: +175
+Deposit: +1252
+Deposit: +1705
+Withdrawal: -547
+Withdrawal: -1744
+----------------------------------------
+Account 46: Balance = 5633
+Last 6 transactions:
+Withdrawal: -693
+Deposit: +1159
+Withdrawal: -1557
+Withdrawal: -1232
+Deposit: +871
+Deposit: +1943
+----------------------------------------
+Account 70: Balance = 5773
+Last 6 transactions:
+Deposit: +1136
+Withdrawal: -1639
+Deposit: +643
+Withdrawal: -1097
+Withdrawal: -1759
+Deposit: +1908
+----------------------------------------
+Account 42: Balance = 6043
+Last 6 transactions:
+Deposit: +1557
+Deposit: +1756
+Deposit: +140
+Deposit: +394
+Withdrawal: -969
+Withdrawal: -150
+----------------------------------------
+Account 76: Balance = 6056
+Last 6 transactions:
+Withdrawal: -1092
+Deposit: +1496
+Withdrawal: -976
+Withdrawal: -1090
+Deposit: +1948
+Withdrawal: -790
+----------------------------------------
+Account 60: Balance = 6077
+Last 6 transactions:
+Deposit: +751
+Withdrawal: -769
+Withdrawal: -946
+Withdrawal: -640
+Withdrawal: -968
+Deposit: +467
+----------------------------------------
+Account 50: Balance = 6137
+Last 6 transactions:
+Withdrawal: -1023
+Withdrawal: -1094
+Deposit: +1071
+Withdrawal: -550
+Deposit: +817
+Deposit: +1138
+----------------------------------------
+Account 39: Balance = 6235
+Last 6 transactions:
+Deposit: +1436
+Withdrawal: -1356
+Withdrawal: -810
+Withdrawal: -902
+Deposit: +1289
+Deposit: +1305
+----------------------------------------
+Account 36: Balance = 6276
+Last 6 transactions:
+Deposit: +1121
+Withdrawal: -1517
+Deposit: +1054
+Withdrawal: -572
+Withdrawal: -1066
+Deposit: +1363
+----------------------------------------
+Account 3: Balance = 6336
+Last 6 transactions:
+Deposit: +489
+Withdrawal: -759
+Deposit: +1039
+Withdrawal: -155
+Withdrawal: -107
+Deposit: +1459
+----------------------------------------
+Account 84: Balance = 6483
+Last 6 transactions:
+Deposit: +1094
+Deposit: +200
+Withdrawal: -1882
+Withdrawal: -1937
+Deposit: +1341
+Deposit: +1755
+----------------------------------------
+Account 29: Balance = 6571
+Last 6 transactions:
+Withdrawal: -157
+Withdrawal: -851
+Deposit: +1249
+Withdrawal: -571
+Deposit: +1984
+Deposit: +614
+----------------------------------------
+Account 55: Balance = 6684
+Last 6 transactions:
+Deposit: +1529
+Withdrawal: -1955
+Withdrawal: -345
+Withdrawal: -255
+Deposit: +153
+Deposit: +924
+----------------------------------------
+Account 48: Balance = 6782
+Last 6 transactions:
+Withdrawal: -628
+Withdrawal: -371
+Deposit: +1750
+Deposit: +1404
+Deposit: +974
+Deposit: +670
+----------------------------------------
+Account 58: Balance = 6799
+Last 6 transactions:
+Withdrawal: -210
+Deposit: +1443
+Deposit: +850
+Withdrawal: -123
+Withdrawal: -1674
+Deposit: +1045
+----------------------------------------
+Account 40: Balance = 7030
+Last 6 transactions:
+Withdrawal: -1414
+Withdrawal: -582
+Withdrawal: -303
+Deposit: +1502
+Withdrawal: -1476
+Deposit: +1124
+----------------------------------------
+Account 44: Balance = 7072
+Last 6 transactions:
+Deposit: +839
+Withdrawal: -533
+Withdrawal: -501
+Withdrawal: -931
+Deposit: +779
+Deposit: +614
+----------------------------------------
+Account 92: Balance = 7113
+Last 6 transactions:
+Deposit: +836
+Deposit: +609
+Withdrawal: -1297
+Deposit: +824
+Deposit: +1007
+Withdrawal: -1841
+----------------------------------------
+Account 8: Balance = 7298
+Last 6 transactions:
+Withdrawal: -1681
+Withdrawal: -1989
+Deposit: +846
+Deposit: +1239
+Deposit: +263
+Withdrawal: -437
+----------------------------------------
+Account 95: Balance = 7366
+Last 6 transactions:
+Deposit: +1879
+Deposit: +282
+Deposit: +802
+Withdrawal: -1770
+Deposit: +1977
+Deposit: +261
+----------------------------------------
+Account 26: Balance = 7784
+Last 6 transactions:
+Deposit: +1432
+Withdrawal: -1871
+Deposit: +1161
+Deposit: +1150
+Withdrawal: -589
+Withdrawal: -1110
+----------------------------------------
+Account 11: Balance = 7874
+Last 6 transactions:
+Withdrawal: -460
+Withdrawal: -464
+Deposit: +1270
+Deposit: +946
+Withdrawal: -765
+Deposit: +238
+----------------------------------------
+Account 33: Balance = 7894
+Last 6 transactions:
+Withdrawal: -289
+Withdrawal: -1509
+Deposit: +1614
+Withdrawal: -570
+Deposit: +1638
+Withdrawal: -418
+----------------------------------------
+Account 13: Balance = 7902
+Last 6 transactions:
+Deposit: +845
+Deposit: +1388
+Deposit: +419
+Withdrawal: -1902
+Deposit: +663
+Withdrawal: -1504
+----------------------------------------
+Account 77: Balance = 7915
+Last 6 transactions:
+Deposit: +1747
+Deposit: +1431
+Withdrawal: -375
+Deposit: +478
+Withdrawal: -924
+Deposit: +1027
+----------------------------------------
+Account 87: Balance = 7930
+Last 6 transactions:
+Deposit: +586
+Deposit: +1687
+Withdrawal: -831
+Deposit: +1051
+Deposit: +638
+Withdrawal: -1432
+----------------------------------------
+Account 15: Balance = 7962
+Last 6 transactions:
+Withdrawal: -378
+Deposit: +1484
+Deposit: +162
+Deposit: +1333
+Deposit: +1867
+Withdrawal: -1104
+----------------------------------------
+Account 91: Balance = 8632
+Last 6 transactions:
+Deposit: +1145
+Withdrawal: -890
+Withdrawal: -426
+Withdrawal: -1311
+Deposit: +590
+Deposit: +1849
+----------------------------------------
+Account 37: Balance = 9176
+Last 6 transactions:
+Withdrawal: -1106
+Withdrawal: -1794
+Deposit: +1904
+Withdrawal: -754
+Deposit: +407
+Deposit: +1193
+----------------------------------------
+Account 83: Balance = 9278
+Last 6 transactions:
+Deposit: +1353
+Withdrawal: -139
+Deposit: +938
+Deposit: +746
+Withdrawal: -1723
+Withdrawal: -1717
+----------------------------------------
+Account 2: Balance = 9312
+Last 6 transactions:
+Withdrawal: -1251
+Deposit: +1352
+Deposit: +826
+Deposit: +1187
+Withdrawal: -1298
+Deposit: +403
+----------------------------------------
+Account 32: Balance = 9378
+Last 6 transactions:
+Deposit: +1941
+Withdrawal: -197
+Deposit: +1600
+Deposit: +645
+Withdrawal: -1918
+Withdrawal: -1599
+----------------------------------------
+Account 47: Balance = 9435
+Last 6 transactions:
+Deposit: +1050
+Deposit: +253
+Deposit: +1731
+Deposit: +944
+Deposit: +1653
+Deposit: +1019
+----------------------------------------
+Account 9: Balance = 10049
+Last 6 transactions:
+Deposit: +516
+Deposit: +433
+Withdrawal: -407
+Deposit: +1164
+Deposit: +400
+Deposit: +1446
+----------------------------------------
+Account 66: Balance = 10330
+Last 6 transactions:
+Deposit: +1056
+Deposit: +577
+Deposit: +1922
+Deposit: +1724
+Withdrawal: -1608
+Deposit: +1648
+----------------------------------------
+Account 43: Balance = 10765
+Last 6 transactions:
+Deposit: +1477
+Deposit: +1107
+Deposit: +829
+Deposit: +1618
+Deposit: +145
+Deposit: +1752
+----------------------------------------
+Account 71: Balance = 10877
+Last 6 transactions:
+Deposit: +1634
+Withdrawal: -1346
+Deposit: +145
+Deposit: +1555
+Deposit: +1673
+Deposit: +841
+----------------------------------------
+Account 100: Balance = 11097
+Last 6 transactions:
+Deposit: +794
+Deposit: +1124
+Deposit: +1623
+Withdrawal: -1570
+Deposit: +626
+Deposit: +806
+----------------------------------------
+Account 51: Balance = 11106
+Last 6 transactions:
+Deposit: +1969
+Deposit: +1949
+Deposit: +463
+Deposit: +459
+Deposit: +1795
+Deposit: +364
+----------------------------------------
+Account 10: Balance = 11143
+Last 6 transactions:
+Deposit: +1810
+Deposit: +641
+Withdrawal: -235
+Withdrawal: -953
+Deposit: +598
+Deposit: +155
+----------------------------------------
+Account 94: Balance = 11592
+Last 6 transactions:
+Deposit: +1203
+Withdrawal: -1891
+Deposit: +1650
+Deposit: +834
+Deposit: +1871
+Deposit: +1969
+----------------------------------------
+Account 22: Balance = 11955
+Last 6 transactions:
+Deposit: +1267
+Deposit: +1095
+Deposit: +297
+Deposit: +168
+Deposit: +732
+Deposit: +1175
+----------------------------------------
+Account 69: Balance = 11974
+Last 6 transactions:
+Deposit: +339
+Deposit: +1414
+Deposit: +1239
+Withdrawal: -328
+Deposit: +1419
+Withdrawal: -392
+----------------------------------------
+Account 24: Balance = 12170
+Last 6 transactions:
+Deposit: +1943
+Deposit: +1233
+Deposit: +426
+Withdrawal: -1839
+Deposit: +1432
+Deposit: +249
+----------------------------------------
+Account 73: Balance = 12446
+Last 6 transactions:
+Deposit: +1304
+Deposit: +1236
+Deposit: +1370
+Withdrawal: -380
+Deposit: +961
+Deposit: +1638
+----------------------------------------
+Account 7: Balance = 13253
+Last 6 transactions:
+Deposit: +894
+Deposit: +1715
+Deposit: +1681
+Withdrawal: -541
+Deposit: +1084
+Deposit: +128
+----------------------------------------
+Account 75: Balance = 13579
+Last 6 transactions:
+Withdrawal: -1990
+Deposit: +980
+Deposit: +1983
+Deposit: +947
+Deposit: +1210
+Deposit: +1341
+----------------------------------------
+Account 12: Balance = 13803
+Last 6 transactions:
+Deposit: +1386
+Deposit: +1634
+Deposit: +1187
+Deposit: +776
+Withdrawal: -356
+Deposit: +632
+----------------------------------------
+Account 45: Balance = 14647
+Last 6 transactions:
+Deposit: +1241
+Deposit: +887
+Deposit: +1010
+Deposit: +1910
+Withdrawal: -379
+Deposit: +1237
+----------------------------------------
+Account 59: Balance = 15686
+Last 6 transactions:
+Deposit: +1762
+Withdrawal: -989
+Deposit: +1946
+Deposit: +275
+Deposit: +1761
+Deposit: +998
