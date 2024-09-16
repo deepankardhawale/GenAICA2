@@ -1,0 +1,23 @@
+//Q:5 Generate a model for Covid 19 with symptoms of parameters like fever, cold, shivering,
+//weight loss, generate 100 model data with random values for each parameter and order by
+//parameter lowest to highest in display based on the input parameter.
+
+//Output-
+
+
+Enter the symptom to sort by (Fever, Cold, Shivering, Weight Loss): Fever
+Data sorted by Fever:
+         Fever  Cold  Shivering  Weight Loss
+84   98.029800     0          7     0.899273
+17   98.036974     1          6    18.242024
+44   98.159106     0          7    19.150766
+16   98.220536     9          5    15.990647
+10   98.434679     6          9     8.870449
+..         ...   ...        ...          ...
+89  103.662705     2          8    15.104479
+1   103.669566     7          8     1.448701
+99  103.854071     6          9     9.519232
+87  103.881878    10          3    16.680295
+46  103.902568     7          7    12.737127
+
+[100 rows x 4 columns]
