@@ -1,9 +1,9 @@
-//Q:5 Generate a model for Covid 19 with symptoms of parameters like fever, cold, shivering,
-//weight loss, generate 100 model data with random values for each parameter and order by
-//parameter lowest to highest in display based on the input parameter.
+# Q:5 Generate a model for Covid 19 with symptoms of parameters like fever, cold, shivering,
+# weight loss, generate 100 model data with random values for each parameter and order by
+# parameter lowest to highest in display based on the input parameter.
 
 
-//Code-
+# Code-
 import random
 import pandas as pd
 
