@@ -1,4 +1,4 @@
-# Python Models for Covid Symptoms and Mathematical Equation Parser
+# Python Models for Covid Symptoms 
 
 This repository contains two Python programs, each solving different problems related to generating random data and parsing mathematical equations.
 
